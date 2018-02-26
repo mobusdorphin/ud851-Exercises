@@ -39,7 +39,8 @@ public class GreenAdapter extends RecyclerView.Adapter<GreenAdapter.NumberViewHo
 
     private static final String TAG = GreenAdapter.class.getSimpleName();
 
-    // TODO (8) Add a private static int called viewHolderCount that will hold the total number of ViewHolders that are created
+    // DONE (8) Add a private static int called viewHolderCount that will hold the total number of ViewHolders that are created
+    private static int viewHolderCount;
 
     private int mNumberItems;
 
@@ -51,7 +52,8 @@ public class GreenAdapter extends RecyclerView.Adapter<GreenAdapter.NumberViewHo
      */
     public GreenAdapter(int numberOfItems) {
         mNumberItems = numberOfItems;
-        // TODO (9) When a new GreenAdapter is created, set the viewHolderCount to 0
+        // DONE (9) When a new GreenAdapter is created, set the viewHolderCount to 0
+        viewHolderCount = 4;
     }
     /**
      *
