@@ -186,7 +186,7 @@ public class MainActivity extends AppCompatActivity
                 Log.d(TAG, "onStartLoading: About to load indicator");
                 mLoadingIndicator.setVisibility(View.VISIBLE);
                 Log.d(TAG, "onStartLoading: Indicator Loaded!");
-
+                forceLoad();
             }
 
             @Override
